@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+# Προγραμματάκι που παράγει τυχαίους κωδικούς
+# με βάση την ημερομηνία-ώρα-λεπτά-δευτερόλεπτα
+# Πηγή: http://cerebrux.net/2016/05/08/dimiourgia-tuxaion-kodikon-termatiko
+# -------------cerebrux.net--------------------
+
+
+for apotelesma in `seq 1 5`
+    # Προβολή των 8 ψηφίων της ημερομνίας σε μορφή shasum 
+    # ανα δευτερόλεπτο απο 1 έως 5 φορές
+    do 
+        date | shasum | head -c 8
+        echo ""
+        sleep 1
+    done
+
+
+
+
+
+
+
